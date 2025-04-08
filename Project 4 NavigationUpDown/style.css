@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Nimbus sans L;
+    background: black;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    background: #0d0d0d6c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .7rem 2.5rem;
+    transition: top 0.5s;
+}
+
+.logo {
+    font-size: 24px;
+    font-family: Segoe Script;
+    font-weight: 100;
+    rotate: -7deg;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.nav-icons img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-position: center;
+    object-fit: cover;
+}
+
+.page-1 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images.unsplash.com/photo-1684610528117-2db5a820b0b9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    height: 100%;
+}
+
+.page-2 {
+    width: 100%;
+    background-color: #0D0D0D;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.page-2 h1 {
+    font-size: 3vw;
+    text-wrap: nowrap;
+    font-family: Segoe Script;
+}
+
+@media (max-width:600px) {
+    .navbar {
+        padding: 1rem 1.2rem;
+    }
+
+    .logo {
+        font-size: 1.6vw;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        font-weight: 400;
+        color: white;
+        text-decoration: none;
+        text-wrap: nowrap;
+        font-size: 2vw;
+    }
+
+    .nav-icons img {
+        height: 30px;
+        width: 30px;
+    }
+}
